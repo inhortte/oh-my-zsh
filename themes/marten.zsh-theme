@@ -16,7 +16,7 @@ function prompt_char {
     echo 'ߜ'
 }
 
-PROMPT='%{$MAGENTA%}%n%{$reset_color%} on %{$PUCE%}%m%{$reset_color%} at %{$RED_BOLD%}$(collapse_pwd)%{$reset_color%}
+PROMPT='%{$MAGENTA%}%n%{$reset_color%}@%{$PUCE%}%m%{$reset_color%} [ %{$RED_BOLD%}$(collapse_pwd)%{$reset_color%} ]
 $(prompt_char) '
 
 # Format for git_prompt_status()
