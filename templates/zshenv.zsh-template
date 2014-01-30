@@ -1,0 +1,70 @@
+HOME=/home/polaris
+export HOME
+
+JAVA_HOME=/usr/lib/jvm/jdk
+export JAVA_HOME
+
+SCALA_HOME=/usr/share/scala
+export SCALA_HOME
+
+ANDROID_HOME=/opt/android
+export ANDROID_HOME
+
+RUBY_200_HOME=$HOME/.gem/ruby/2.0.0
+export RUBY_200_HOME
+
+MAVEN_HOME=/opt/maven
+export MAVEN_HOME
+
+LEININGEN_HOME=$HOME/.lein
+export LEINIGEN_HOME
+
+HEROKU_HOME=/usr/local/heroku
+
+PATH=/home/polaris/realized_aspirations/the_oyster_boys_are_swimming_now:/home/polaris/bin:/home/polaris/.cabal/bin:/usr/local/bin:$HEROKU_HOME/bin:$JAVA_HOME/bin:$LEININGEN_HOME/bin:$MAVEN_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$RUBY_200_HOME/bin:/usr/bin:/bin:/usr/local/rvm/bin:/sbin:/usr/sbin:/usr/games
+export PATH
+
+# DARCS_EDITOR="/usr/bin/emacs -nw"
+# DARCS_DO_COLOR_LINES=1
+# export DARCS_EDITOR
+# export DARCS_DO_COLOR_LINES
+
+FCEDIT=vim
+EDITOR=vim
+VISUAL=vim
+export FCEDIT
+export EDITOR
+export VISUAL
+
+# SHELL=/bin/zsh
+# export SHELL
+
+# GEM_PATH=$HOME/.gem/ruby/2.0.0
+# export GEM_PATH
+
+# MITSCHEME_LIBRARY_PATH=/usr/local/lib/mit-scheme
+# export MITSCHEME_LIBRARY_PATH
+
+#CLASSPATH=$HOME/.swank-clojure:$SCALA_HOME/lib:/usr/share/java/joda-time-2.0.jar:.
+#export CLASSPATH
+
+EMAIL=inhortte@gmail.com
+export EMAIL
+
+# HISTFILE=$HOME/.history
+# HISTSIZE=1024
+# DIRSTACKSIZE=50
+# LITHISTSIZE=1024
+# export HISTFILE
+# export HISTSIZE
+# export DIRSTACKSIZE
+# export LITHISTSIZE
+
+# LDFLAGS=-L/usr/local/lib/mysql
+# LD_LIBRARY_PATH=$HOME/lib:/usr/local/lib:/usr/local/lib/mysql
+# export LDFLAGS
+# export LD_LIBRARY_PATH
+
+# export LADSPA_PATH=/usr/lib/ladspa
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

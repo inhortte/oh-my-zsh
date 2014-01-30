@@ -1,0 +1,20 @@
+# cd
+
+# stty -tabs erase '^?'
+# log
+# unlimit
+# limit core 0
+# umask 022
+
+# export EXINIT='se ai nomesg tabstop=8 wrapmargin=1 shell=/bin/zsh sm redraw'
+
+# PROMPT=$'${vcs_info_msg_0_}%B%m(%1d):%b '
+#PROMPT='${vcs_info_msg_0_}%B%F{blue}]─>
+#%f%b’'
+
+# RPROMPT="%U%t%u"
+
+# gconftool-2 --set /apps/compiz/plugins/move/allscreens/options/constrain_y --type bool 0
+
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+setxkbmap -layout "cz(dvorak-ucw)"

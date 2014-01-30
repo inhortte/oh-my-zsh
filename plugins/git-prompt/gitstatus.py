@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 # change those symbols to whatever you prefer
-symbols = {'ahead of': '↑', 'behind': '↓', 'staged':'♦', 'changed':'‣', 'untracked':'…', 'clean':'⚡', 'unmerged':'≠', 'sha1':':'}
+symbols = {'ahead of': 'ߍ', 'behind': '߇', 'staged':'ߋ', 'changed':'ߏ', 'untracked':'…', 'clean':'⚡', 'unmerged':'≠', 'sha1':':'}
 
 from subprocess import Popen, PIPE
 
@@ -65,4 +65,3 @@ else:
 			remote = "{behind}{1}{ahead of}{0}".format(*div_match.groups(), **symbols)
 
 print '\n'.join([branch,remote,status])
-

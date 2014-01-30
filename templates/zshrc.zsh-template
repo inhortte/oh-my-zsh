@@ -5,17 +5,10 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+ZSH_THEME="fwalch"
 
 # Uncomment this to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how often before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -37,33 +30,81 @@ ZSH_THEME="robbyrussell"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git cabal lein github node rails ruby rvm systemadmin)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# aliases, baby
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
+alias ls='ls -Fs --color=tty'
+alias boob='print -P %s%b'
 
-# # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+HISTFILE=$HOME/.history
+HISTSIZE=1024
+DIRSTACKSIZE=50
+LITHISTSIZE=1024
+# NETHACKOPTIONS=confirm,male,fixinv,time,safe_pet,sortpack,tombstone,verbose,news,dogname:Jeff,catname:Puppy,fruit:fondle
+# IRCSERVER=irc.i.cz
+# unset TMOUT
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# setopt notify globdots correct pushdtohome cdablevars autolist automenu \
+#	sunkeyboardhack correctall autocd recexact longlistjobs \
+#	histignoredups pushdsilent noclobber braceccl histnostore \
+#	autopushd pushdminus extendedglob rcquotes histverify \
+#        interactivecomments listtypes nobeep numericglobsort \
+#        pathdirs rcexpandparam shwordsplit zle login
+# autoload -U promptinit
+# promptinit
+# autoload -Uz vcs_info
+# zstyle ':vcs_info:*' enable git cvs svn
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# leper fondle moose
 
+watch=( jenicek i polaris patricia rostej habosh sd calista chris )
+WATCHFMT="The DAMN %B%n-leper%b %B%a%b (tty%l) from %B%M%b at %@."
+LOGCHECK=10
+
+# i'll clean the gunge from between my lobes with that pickaxe, please.
+
+
+# and prick my thumbs on your thorns.
+
+
+
+# why must jenicek make such tepid coffee?
+
+# funky
+
+stomp () {
+        if (( $# == 0 ))
+        then
+                rm *~
+        else
+                cd $1
+                rm *~
+                cd $OLDPWD
+        fi
+}
+
+# precmd() {
+#    vcs_info 'prompt'
+# }
+
+# function chpwd {
+#  echo "You are here --> `pwd`.";
+# }
+
+# function periodic {
+#    tumor=$[$RANDOM/(32768/$#PROMPT_THURK)]
+#    pmt="PS1=\$'$PROMPT_THURK[$tumor]'"
+#    echo $pmt
+#    eval $pmt
+
+#   tumor=$[$RANDOM/(32768/$#RPROMPT_THURK)]
+#   RPS1=$RPROMPT_THURK[$tumor]
+# }
