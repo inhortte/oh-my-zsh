@@ -10,14 +10,14 @@ function collapse_pwd {
 
 }
 function prompt_char {
-    git branch >/dev/null 2>/dev/null && echo 'ߘ' && return
-    hg root >/dev/null 2>/dev/null && echo 'ߒ' && return
-    darcs whatsnew >/dev/null 2>/dev/null && echo 'ߥ' && return
-    echo 'ߜ'
+    git branch >/dev/null 2>/dev/null && echo '> ' && return
+    hg root >/dev/null 2>/dev/null && echo '> ' && return
+    darcs whatsnew >/dev/null 2>/dev/null && echo '> ' && return
+    echo '> '
 }
 
 PROMPT='%{$MAGENTA%}%n%{$reset_color%}@%{$PUCE%}%m%{$reset_color%} [ %{$RED_BOLD%}$(collapse_pwd)%{$reset_color%} ]
-$(prompt_char) '
+> '
 
 # Format for git_prompt_status()
 ZSH_THEME_GIT_PROMPT_UNMERGED=" %{$RED%}unmerged"
